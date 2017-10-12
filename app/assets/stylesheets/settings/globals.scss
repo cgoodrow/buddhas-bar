@@ -29,12 +29,16 @@
      content: '';
      position: absolute;
      top: 50%;
-     right: -15.4%;
+     right: -15.2%;
      width: 0;
      height: 0;
      border-top: 75px solid transparent;
      border-bottom: 75px solid transparent;
      border-left:75px solid #000;
+
+     @include breakpoint (small down) {
+       display: none;
+     }
 
    }
 
@@ -49,7 +53,7 @@
   padding: 35px;
   height: 400px;
   background-color: #e6cc0a;
-  z-index: 5;
+  z-index: -1;
 
 
   img {
@@ -75,6 +79,10 @@
      border-top: 75px solid transparent;
      border-bottom: 75px solid transparent;
      border-right:75px solid #000;
+
+     @include breakpoint (small down ) {
+       display: none;
+     }
    }
 
    h2 {
