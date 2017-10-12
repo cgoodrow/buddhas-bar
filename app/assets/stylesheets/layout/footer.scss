@@ -1,0 +1,14 @@
+.footer {
+  height: 75px;
+  background-color: #000;
+  border-top: solid 2px #e6cc0a;
+
+  p {
+    color: $font-yellow;
+    transform: translate(0, 100%);
+
+    a {
+      color: $white;
+    }
+  }
+}
