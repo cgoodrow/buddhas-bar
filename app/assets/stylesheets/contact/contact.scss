@@ -53,7 +53,7 @@ label {
   z-index: 0;
 
   @include breakpoint (small down) {
-    margin-top: 60px;
+    margin-top: 80px;
   }
 
   &:before {

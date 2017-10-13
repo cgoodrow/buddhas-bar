@@ -1,0 +1,22 @@
+#social {
+  .fb_iframe_widget {
+    width: 100%;
+      span {
+      width: 100% !important;
+      height: 474px !important;
+      overflow: scroll;
+
+      iframe {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .non-arrow-box {
+    height: 590px;
+
+    @include breakpoint (small down) {
+      height: auto;
+    }
+  }
+}
