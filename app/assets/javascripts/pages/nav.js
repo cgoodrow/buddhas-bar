@@ -1,5 +1,5 @@
 /* A simple and scalable hamburger menu using css transitions. */
-$(document).on('turbolinks:load', function() {
+$(document).ready(function() {
   $('.your-class').slick({
   slidesToShow: 1,
   slidesToScroll: 1,

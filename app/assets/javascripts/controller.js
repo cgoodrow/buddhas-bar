@@ -1,6 +1,3 @@
-$(document).on('turbolinks:load', function() {
-
-
 var myApp = angular.module('myApp', []);
 
 myApp.controller('MyController', function MyController($scope) {
@@ -87,5 +84,4 @@ myApp.controller('MyController', function MyController($scope) {
           $scope.catselect = undefined;
       }
   };
-});
 });

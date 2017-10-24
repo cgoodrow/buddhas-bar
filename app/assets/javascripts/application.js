@@ -17,7 +17,6 @@
 //= require angular
 //= require foundation
 //= require jquery.slick
-//= require turbolinks
 //= require jquery.turbolinks
 
 
