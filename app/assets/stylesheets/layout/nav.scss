@@ -162,5 +162,6 @@ nav ul li {
   font-size: 2rem;
 }
 nav ul li:hover {
-  background: blue;
+  display: block;
+  cursor: pointer;
 }
