@@ -4,4 +4,7 @@ class WelcomeController < ApplicationController
 
   def the_experience
   end
+
+  def menu
+  end
 end

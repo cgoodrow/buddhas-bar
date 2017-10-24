@@ -1,0 +1,63 @@
+<section class="row expanded">
+    <div class="your-class">
+      <div><%= image_tag('slick/food_01.jpg') %></div>
+      <div><%= image_tag('slick/food_02.jpg') %></div>
+      <div><%= image_tag('slick/food_03.jpg') %></div>
+    </div>
+</section>
+
+<section class="breadcrumbs row expanded">
+  <ul class="breadcrumbs columns">
+    <li><%= link_to('Home', root_path, class: 'disabled' ) %></li>
+    <li><%= link_to('Menu', welcome_menu_path) %></li>
+  </ul>
+</section>
+
+<section class="menu-page">
+  <div class="row">
+    <div class="small-12 medium-10 large-10 large-centered columns non-arrow-box">
+      <div class="content-main">
+        <div class="content-box">
+          <div class="main" ng-controller="MyController">
+            <div class="search small-12 medium-6 large-6 columns">
+              <div>Search</div>
+                <input ng-model="query" placeholder="Search for menu items" autofocus>
+            </div>
+            <div class="small-12 medium-6 large-6 columns">
+              <span>Search By Category</span>
+              <select ng-model="catselect.category"
+              ng-options="category.id as category.display for category in menuCategories"
+              ng-change="valueSelected(catselect)"></select>
+            </div>
+            <div class="small-12 medium-12 large-12 columns">
+              <ul class="items">
+                <li class="name cf" ng-repeat="item in menu | filter : catselect | filter : query">
+                  <!-- <img ng-src="assets/people/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}"> -->
+                  <div class="info row">
+                    <div class="small-6 medium-6 large-6 columns">
+                    <h3>{{item.name}}</h3>
+                    <p><span>{{item.category}}</span></p>
+                    </div>
+                    <div class="small-6 medium-6 large-3 large-push-4 columns">
+                    <p class="price">{{item.price}}<i class="icono-arrow3-left"></i></p>
+                    </div>
+                    <hr>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact">
+  <div class="row">
+    <div class="small-12 large-10 large-centered columns">
+      <%= render 'contacts/new' %>
+    </div>
+  </div>
+</section>

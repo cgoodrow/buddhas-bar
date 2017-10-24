@@ -20,6 +20,7 @@
 //= require turbolinks
 
 //= require_tree ./pages
+//= require controller.js
 
 //= require_tree
 

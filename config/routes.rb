@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   get 'welcome/the_experience'
 
+  get 'welcome/menu'
+
   get 'welcome/index'
 
   root 'welcome#index'
