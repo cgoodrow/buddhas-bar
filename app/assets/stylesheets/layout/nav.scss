@@ -160,6 +160,15 @@ nav ul {
 nav ul li {
   padding: 20px 5px;
   font-size: 2rem;
+
+  a {
+    color: $font-yellow;
+
+    &:hover {
+      color: $font-yellow;
+      opacity: 0.7;
+    }
+  }
 }
 nav ul li:hover {
   display: block;
