@@ -86,6 +86,9 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-slick-rails (1.8.1)
       railties (>= 3.1)
+    jquery-turbolinks (2.1.0)
+      railties (>= 3.1.0)
+      turbolinks
     jquery-ui-rails (6.0.1)
       railties (>= 3.2.16)
     loofah (2.1.1)
@@ -197,6 +200,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   jquery-slick-rails
+  jquery-turbolinks
   jquery-ui-rails
   mail_form
   pg (~> 0.18)

@@ -1,24 +1,23 @@
 var myApp = angular.module('myApp', []);
 
-
 myApp.controller('MyController', function MyController($scope) {
   $scope.catselect = {category:""};
 
   $scope.menu = [
     {
       "name":"Hummus",
-      "category":"Starters",
+      "category":"Starter",
       "price":"$4.99"
     },
     {
       "name":"Grape Leaves",
-      "category":"Starters",
+      "category":"Starter",
       "price":"$5.99"
     },
-  {
-    "name":"Hawaiian",
-    "category":"Pizza",
-    "price":"$12.99"
+    {
+      "name":"Fries",
+      "category":"Starter",
+      "price":"$3.50"
   },
   {
     "name":"BBQ",
@@ -46,13 +45,23 @@ myApp.controller('MyController', function MyController($scope) {
     "price":"$6.99"
   },
   {
+    "name":"Steak",
+    "category":"Burger",
+    "price":"$8.99"
+  },
+  {
+    "name":"Cheese",
+    "category":"Burger",
+    "price":"$5.99"
+  },
+  {
     "name":"Club",
-    "category":"Sandwiche",
+    "category":"Sandiwich",
     "price":"$6.99"
   },
   {
     "name":"Ham",
-    "category":"Sandwiche",
+    "category":"Sandiwich",
     "price":"$5.99"
   },
   {
@@ -67,7 +76,7 @@ myApp.controller('MyController', function MyController($scope) {
   }
 ]
 
-  $scope.menuCategories = [{id:"", display:'All'},{id:"Pizza", display:'Pizza'}, {id:"Burger", display:'Burger'}, {id:"Sandwiche", display: 'Sandwiches'}, {id:"Starters", display:'Starters'}, {id:"On Tap", display: 'On Tap'}];
+  $scope.menuCategories = [{id:"", display:'All'},{id:"Pizza", display:'Pizza'}, {id:"Burger", display:'Burger'}, {id:"Sandwich", display: 'Sandwiches'}, {id:"Starter", display:'Starters'}, {id:"On Tap", display: 'On Tap'}];
 
   $scope.valueSelected = function (value) {
 

@@ -18,6 +18,8 @@
 //= require foundation
 //= require jquery.slick
 //= require turbolinks
+//= require jquery.turbolinks
+
 
 //= require_tree ./pages
 //= require controller.js

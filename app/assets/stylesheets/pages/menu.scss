@@ -6,6 +6,10 @@ $text-color: #333;
 
   .non-arrow-box {
     height: 100%;
+
+    @include breakpoint (small down) {
+      padding: 0;
+    }
   }
 
   h2 {
@@ -20,6 +24,7 @@ $text-color: #333;
 
   .search {
     input {
+      width: 100%;
       height: 2.4375rem;
       margin: 0 0 1rem;
       padding: 0.5rem;
@@ -38,6 +43,11 @@ $text-color: #333;
     position: relative;
     width: 80%;
     margin: 40px auto;
+
+    @include breakpoint (small down) {
+      width: 100%;
+      margin: 25px auto;
+    }
 
     .content-box {
       height: auto;
@@ -78,6 +88,10 @@ $text-color: #333;
             margin-bottom: 0;
             margin-top: -10px;
 
+            @include breakpoint (small down) {
+              margin-top: -5px;
+            }
+
             &.price {
               margin-top: 20px;
             }
@@ -91,5 +105,15 @@ $text-color: #333;
         }
       }
     }
+  }
+
+  li.no-sessions {
+    display: block;
+    font-size: 20px;
+    font-style: italic;
+    color: $font-yellow;
+  }
+  li + li.no-sessions {
+    display: none;
   }
 }
