@@ -56,12 +56,12 @@ myApp.controller('MyController', function MyController($scope) {
   },
   {
     "name":"Club",
-    "category":"Sandiwich",
+    "category":"Sandwich",
     "price":"$6.99"
   },
   {
     "name":"Ham",
-    "category":"Sandiwich",
+    "category":"Sandwich",
     "price":"$5.99"
   },
   {
