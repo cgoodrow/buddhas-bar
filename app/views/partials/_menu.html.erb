@@ -1,0 +1,251 @@
+<div class="reveal" id="hummus" data-reveal ng-controller="MyController">
+  <ul class="items">
+    <li class="name cf" ng-repeat="item in menu | limitTo: 1">
+      <div class="small-12 medium-12 large-12 large-centered columns">
+      <h3>{{menu[0].name}}</h3>
+    </div>
+    <div class="small-6 medium-6 large-5 columns">
+      <%= image_tag('welcome/food_04.jpg') %>
+    </div>
+    <div class="small-6 medium-6 large-7 columns">
+      <p>{{menu[0].desc}} {{menu[0].price}}</p>
+    </div>
+    </li>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal" id="grapeLeaves" data-reveal ng-controller="MyController">
+  <ul class="items">
+    <li class="name cf" ng-repeat="item in menu | limitTo: 1">
+      <div class="small-12 medium-12 large-12 large-centered columns">
+      <h3>{{menu[1].name}}</h3>
+    </div>
+    <div class="small-6 medium-6 large-5 columns">
+      <%= image_tag('welcome/food_04.jpg') %>
+    </div>
+    <div class="small-6 medium-6 large-7 columns">
+      <p>{{menu[1].desc}} {{menu[1].price}}</p>
+    </div>
+    </li>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal" id="fries" data-reveal ng-controller="MyController">
+  <ul class="items">
+    <li class="name cf" ng-repeat="item in menu | limitTo: 1">
+      <div class="small-12 medium-12 large-12 large-centered columns">
+      <h3>{{menu[2].name}}</h3>
+    </div>
+    <div class="small-6 medium-6 large-5 columns">
+      <%= image_tag('welcome/food_04.jpg') %>
+    </div>
+    <div class="small-6 medium-6 large-7 columns">
+      <p>{{menu[2].desc}} {{menu[2].price}}</p>
+    </div>
+    </li>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal" id="bbq" data-reveal ng-controller="MyController">
+  <ul class="items">
+    <li class="name cf" ng-repeat="item in menu | limitTo: 1">
+      <div class="small-12 medium-12 large-12 large-centered columns">
+      <h3>{{menu[3].name}} {{menu[3].category}}</h3>
+    </div>
+    <div class="small-6 medium-6 large-5 columns">
+      <%= image_tag('welcome/food_04.jpg') %>
+    </div>
+    <div class="small-6 medium-6 large-7 columns">
+      <p>{{menu[3].desc}} {{menu[3].price}}</p>
+    </div>
+    </li>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal" id="blt" data-reveal ng-controller="MyController">
+  <ul class="items">
+    <li class="name cf" ng-repeat="item in menu | limitTo: 1">
+      <div class="small-12 medium-12 large-12 large-centered columns">
+      <h3>{{menu[4].name}} {{menu[4].category}}</h3>
+    </div>
+    <div class="small-6 medium-6 large-5 columns">
+      <%= image_tag('welcome/food_04.jpg') %>
+    </div>
+    <div class="small-6 medium-6 large-7 columns">
+      <p>{{menu[4].desc}} {{menu[4].price}}</p>
+    </div>
+    </li>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal" id="meat" data-reveal ng-controller="MyController">
+  <ul class="items">
+    <li class="name cf" ng-repeat="item in menu | limitTo: 1">
+      <div class="small-12 medium-12 large-12 large-centered columns">
+      <h3>{{menu[5].name}} {{menu[5].category}}</h3>
+    </div>
+    <div class="small-6 medium-6 large-5 columns">
+      <%= image_tag('welcome/food_04.jpg') %>
+    </div>
+    <div class="small-6 medium-6 large-7 columns">
+      <p>{{menu[5].desc}} {{menu[5].price}}</p>
+    </div>
+    </li>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal" id="buddha" data-reveal ng-controller="MyController">
+  <ul class="items">
+    <li class="name cf" ng-repeat="item in menu | limitTo: 1">
+      <div class="small-12 medium-12 large-12 large-centered columns">
+      <h3>{{menu[6].name}} {{menu[6].category}}</h3>
+    </div>
+    <div class="small-6 medium-6 large-5 columns">
+      <%= image_tag('welcome/food_04.jpg') %>
+    </div>
+    <div class="small-6 medium-6 large-7 columns">
+      <p>{{menu[6].desc}} {{menu[6].price}}</p>
+    </div>
+    </li>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal" id="olive" data-reveal ng-controller="MyController">
+  <ul class="items">
+    <li class="name cf" ng-repeat="item in menu | limitTo: 1">
+      <div class="small-12 medium-12 large-12 large-centered columns">
+      <h3>{{menu[7].name}} {{menu[7].category}}</h3>
+    </div>
+    <div class="small-6 medium-6 large-5 columns">
+      <%= image_tag('welcome/food_04.jpg') %>
+    </div>
+    <div class="small-6 medium-6 large-7 columns">
+      <p>{{menu[7].desc}} {{menu[7].name}}</p>
+    </div>
+    </li>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal" id="steak" data-reveal ng-controller="MyController">
+  <ul class="items">
+    <li class="name cf" ng-repeat="item in menu | limitTo: 1">
+      <div class="small-12 medium-12 large-12 large-centered columns">
+      <h3>{{menu[8].name}} {{menu[8].category}}</h3>
+    </div>
+    <div class="small-6 medium-6 large-5 columns">
+      <%= image_tag('welcome/food_04.jpg') %>
+    </div>
+    <div class="small-6 medium-6 large-7 columns">
+      <p>{{menu[8].desc}} {{menu[8].price}}</p>
+    </div>
+    </li>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal" id="cheese" data-reveal ng-controller="MyController">
+  <ul class="items">
+    <li class="name cf" ng-repeat="item in menu | limitTo: 1">
+      <div class="small-12 medium-12 large-12 large-centered columns">
+      <h3>{{menu[9].name}} {{menu[9].category}}</h3>
+    </div>
+    <div class="small-6 medium-6 large-5 columns">
+      <%= image_tag('welcome/food_04.jpg') %>
+    </div>
+    <div class="small-6 medium-6 large-7 columns">
+      <p>{{menu[9].desc}} {{menu[9].price}}</p>
+    </div>
+    </li>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal" id="club" data-reveal ng-controller="MyController">
+  <ul class="items">
+    <li class="name cf" ng-repeat="item in menu | limitTo: 1">
+      <div class="small-12 medium-12 large-12 large-centered columns">
+      <h3>{{menu[10].name}} {{menu[10].category}}</h3>
+    </div>
+    <div class="small-6 medium-6 large-5 columns">
+      <%= image_tag('welcome/food_04.jpg') %>
+    </div>
+    <div class="small-6 medium-6 large-7 columns">
+      <p>{{menu[10].desc}} {{menu[10].price}}</p>
+    </div>
+    </li>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal" id="ham" data-reveal ng-controller="MyController">
+  <ul class="items">
+    <li class="name cf" ng-repeat="item in menu | limitTo: 1">
+      <div class="small-12 medium-12 large-12 large-centered columns">
+      <h3>{{menu[11].name}} {{menu[11].category}}</h3>
+    </div>
+    <div class="small-6 medium-6 large-5 columns">
+      <%= image_tag('welcome/food_04.jpg') %>
+    </div>
+    <div class="small-6 medium-6 large-7 columns">
+      <p>{{menu[11].desc}} {{menu[11].price}}</p>
+    </div>
+    </li>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal" id="coors" data-reveal ng-controller="MyController">
+  <ul class="items">
+    <li class="name cf" ng-repeat="item in menu | limitTo: 1">
+      <div class="small-12 medium-12 large-12 large-centered columns">
+      <h3>{{menu[12].name}} {{menu[12].category}}</h3>
+    </div>
+    <div class="small-6 medium-6 large-5 columns">
+      <%= image_tag('welcome/food_04.jpg') %>
+    </div>
+    <div class="small-6 medium-6 large-7 columns">
+      <p>{{menu[12].desc}} {{menu[12].price}}</p>
+    </div>
+    </li>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal" id="coors" data-reveal ng-controller="MyController">
+  <ul class="items">
+    <li class="name cf" ng-repeat="item in menu | limitTo: 1">
+      <div class="small-12 medium-12 large-12 large-centered columns">
+      <h3>{{menu[13].name}} {{menu[13].category}}</h3>
+    </div>
+    <div class="small-6 medium-6 large-5 columns">
+      <%= image_tag('welcome/food_04.jpg') %>
+    </div>
+    <div class="small-6 medium-6 large-7 columns">
+      <p>{{menu[13].desc}} {{menu[13].price}}</p>
+    </div>
+    </li>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

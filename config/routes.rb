@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get 'welcome/menu'
 
+  get 'welcome/join_the_team'
+
   get 'welcome/index'
 
   root 'welcome#index'

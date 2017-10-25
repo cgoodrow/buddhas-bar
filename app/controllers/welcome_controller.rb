@@ -7,4 +7,7 @@ class WelcomeController < ApplicationController
 
   def menu
   end
+
+  def join_the_team
+  end
 end
