@@ -13,5 +13,7 @@ Rails.application.routes.draw do
   # match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
 
+  resources "careers", only: [:new, :create]
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
