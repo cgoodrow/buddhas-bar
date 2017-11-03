@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'resumes/index'
+
+  get 'resumes/new'
+
+  get 'resumes/create'
+
+  get 'resumes/destroy'
+
   get 'welcome/the_experience'
 
   get 'welcome/menu'
@@ -13,7 +21,6 @@ Rails.application.routes.draw do
   # match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
 
-  resources "careers", only: [:new, :create]
-
+  resources :resumes, only: [:index, :new, :create, :destroy]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -24,6 +24,9 @@ default: &default
 development:
   <<: *default
   database: buddhas-bar_development
+  username: postgres
+  password: cg090482
+
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,6 +61,8 @@ development:
 test:
   <<: *default
   database: buddhas-bar_test
+  password: test
+
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is

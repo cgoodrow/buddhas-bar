@@ -46,6 +46,9 @@ gem 'mail_form'
 
 gem 'simple_form'
 
+gem 'carrierwave', '~> 0.9'
+
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
